@@ -23,3 +23,18 @@ var difContent = (/*($(window).height() - $('content').height()) +*/ ($('header'
     
 $('content').height($('content').height() - difContent);
 });
+
+//Evento do Menu
+$('#btnMenu, #btnClose').click(function(){
+    MenuToggle();
+});
+
+//Função Dinâmica para Abrir/Fechar o Menu
+function MenuToggle(){
+    
+    if($('#menu').offset().left < 0){
+        $('#menu').animate({left:'0'},1000);
+    }else{
+        $('#menu').animate({left:'-100%'},1000);
+    }
+}

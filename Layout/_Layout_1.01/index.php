@@ -43,7 +43,10 @@ if (!isset($_SESSION['idUser'])) {
             <div name="btnMenu" id="btnMenu" class="btnMenu"><i class="fas fa-bars fa-2x"></i></div><!--- BOTÃO DE MENU-->
         </header>
         <div name="menu" class="menu" id="menu" ><!-- DESENVOLVIMENTO DO MENU-->
-            <div name="btnClose" class="btnClose" id="btnClose"> <i class="far fa-times-circle fa-3x"></i></div><br>
+            <div id="div-close">
+                <div name="btnClose" class="btnClose" id="btnClose"> <i class="far fa-times-circle fa-3x"></i></div>    
+            </div>
+            <br>
             <div name="menuLista" class="menuLista" id="menuLista" type="none">
 
                 <a href="#"><div class="menuItem"><i class="fas fa-book fa-3x"></i><br>Catálogo</div></a>					
@@ -52,7 +55,7 @@ if (!isset($_SESSION['idUser'])) {
                 <a href="#"><div class="menuItem"><i class="fas fa-sign-out-alt fa-3x"></i><br>Sair</div></a>
 
             </div>
-            <div class="rightBorder border-1em"></div>
+            <!--<div class="rightBorder border-1em"></div>-->
         </div>
     <content> <!-- CONTEÚDO DA PÁGINA -->
 

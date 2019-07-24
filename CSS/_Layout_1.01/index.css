@@ -83,6 +83,7 @@ header div#btnMenu{
 }
 header div#btnMenu i{
     margin-top: 0.5em;	
+    cursor: pointer;
 }
 
 /* Menu */
@@ -93,17 +94,32 @@ header div#btnMenu i{
     top: 0;
     position: fixed;
     z-index: 99999;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(0,0,0,1);
     color: white;
+}
+#menu #div-close{
+    position: relative;
+    width: 100%;
+    padding: 1em;
+    text-align: right;
+}
+
+#menu #menuLista{
+    position: relative;
+    width: 100%;
+    padding: 1em;
+}
+
+#menu #menuLista a{
     display: flex;
     box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    font-size: 2em;
+    padding: 1.3em;
 }
-#menu #btnClose{
-    position: absolute;
-    float: right;
 
-    top: 1em;
-}
 
 
 
