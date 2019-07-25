@@ -215,27 +215,27 @@ footer span#lunicarFooter{
 -*/
 
 @media only screen and (min-width: 1280px){
-    Cabeçalho
+    /*Cabeçalho*/
 
 
-     Rodapé 
+     /*Rodapé*/ 
 
 
 }
--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 
 
 
-        PARA TABLETS
+        /*PARA TABLETS*/
 
 
 
 
 
-        PARA MOBILE
+        /*PARA MOBILE*/
 
 
-Iphone 5/SE
+/*Iphone 5/SE*/
 @media only screen and (min-width: 320px){
 
      Cabeçalho 
@@ -282,7 +282,7 @@ Iphone 5/SE
     }
 }
 
-SmartPhones Padrões
+/*SmartPhones Padrões*/
 
 @media only screen and (min-width: 360px){
 
@@ -323,7 +323,9 @@ SmartPhones Padrões
     }
 }
 
- MONITORES PEQUENOS
+ /*MONITORES PEQUENOS*/
 @media only screen and (min-width: 1080px){
-    
+    #menu{
+        
+    }
 }
