@@ -4,28 +4,28 @@
  * and open the template in the editor.
  */
 
-$(function(){
-
-$('content').height('100%');
-
-//Diferença entre o tamanho de {body} para {window}
-var difContent = (/*($(window).height() - $('content').height()) +*/ ($('header').height() + $('footer').height()));
-    
-$('content').height($('content').height() - difContent);
-    
-});
-
-$(window).change(function(){
-    $('content').height('100%');
-
-//Diferença entre o tamanho de {body} para {window}
-var difContent = (/*($(window).height() - $('content').height()) +*/ ($('header').height() + $('footer').height()));
-    
-$('content').height($('content').height() - difContent);
-});
+//$(function(){
+//
+//$('content').height('100%');
+//
+////Diferença entre o tamanho de {body} para {window}
+//var difContent = (/*($(window).height() - $('content').height()) +*/ ($('header').height() + $('footer').height()));
+//    
+//$('content').height($('content').height() - difContent);
+//    
+//});
+//
+//$(window).change(function(){
+//    $('content').height('100%');
+//
+////Diferença entre o tamanho de {body} para {window}
+//var difContent = (/*($(window).height() - $('content').height()) +*/ ($('header').height() + $('footer').height()));
+//    
+//$('content').height($('content').height() - difContent);
+//});
 
 //Evento do Menu
-$('#btnMenu, #btnClose').click(function(){
+$('#btnMenu, #btnClose i').click(function(){
     MenuToggle();
 });
 

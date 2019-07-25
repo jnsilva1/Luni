@@ -8,6 +8,10 @@
     font-family: 'Lobster Two';
 }
 
+.pointer{
+    cursor:pointer;
+}
+
 html, body{
     width: 100%;
     height: 100%;
@@ -70,7 +74,7 @@ header div#title{
     width: 80%;
 }
 header div#title h2{				
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 header div#btnMenu{
@@ -79,7 +83,7 @@ header div#btnMenu{
     color:rgba(255,255,255,1);
     width: 10%;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 header div#btnMenu i{
     margin-top: 0.5em;	
@@ -94,8 +98,9 @@ header div#btnMenu i{
     top: 0;
     position: fixed;
     z-index: 99999;
-    background-color: rgba(0,0,0,1);
+    background-color:rgba(30,144,255,1);
     color: white;
+    overflow: auto;
 }
 #menu #div-close{
     position: relative;
@@ -105,19 +110,32 @@ header div#btnMenu i{
 }
 
 #menu #menuLista{
-    position: relative;
+    position: absolute;
     width: 100%;
     padding: 1em;
+    padding-left: 1.5em;
+
 }
 
 #menu #menuLista a{
-    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.8em;
     box-sizing: border-box;
-    width: 200px;
-    height: 200px;
-    border: 1px solid white;
-    font-size: 2em;
-    padding: 1.3em;
+}
+
+#menu #menuLista a div.menuItem{
+    width: 15%;
+    height: 6.5em;
+    position: relative;
+    text-align: center;
+    float: left;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px white;
+    margin: .8em;
+    padding: 1em;
 }
 
 
@@ -127,6 +145,7 @@ header div#btnMenu i{
 
 content{
     width: 100%;
+    min-height: 80%;
     position: relative;
     padding: 15px;
     box-sizing: border-box;
@@ -171,8 +190,8 @@ footer span#lunicarFooter{
 }
 
 .menuSlideIn{
-  -webkit-animation: menuSlideIn 2s;
-  display: flex;
+    -webkit-animation: menuSlideIn 2s;
+    display: flex;
 }
 
 .menuSlideOut{
@@ -196,35 +215,35 @@ footer span#lunicarFooter{
 -*/
 
 @media only screen and (min-width: 1280px){
-    /*Cabeçalho*/
+    Cabeçalho
 
 
-    /* Rodapé */
+     Rodapé 
 
 
 }
-/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 
-/*
+
 
         PARA TABLETS
 
-*/
 
 
-/*
+
+
         PARA MOBILE
-*/
 
-/*Iphone 5/SE*/
+
+Iphone 5/SE
 @media only screen and (min-width: 320px){
 
-    /* Cabeçalho */
+     Cabeçalho 
     header{
         height: 60px;
     }
     header div{
-        /*border:1px solid white;*/
+        border:1px solid white;
     }
     header div#logo{						
         padding: 1px;
@@ -237,7 +256,7 @@ footer span#lunicarFooter{
         text-align: center;
     }
     header div#title h2{				
-        font-size: 1.1em;
+        font-size: 1.1em;  
     }
 
     header div#btnMenu{
@@ -245,15 +264,29 @@ footer span#lunicarFooter{
         font-size: 0.9em;
     }
 
+    #menu #menuLista{
+        padding-left: 1em;
+    }
+
+    #menu #menuLista a div.menuItem{
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        width: 40%;
+        height: 8em;
+        font-size: large;
+    }
+
     content{
+
     }
 }
 
-/*SmartPhones Padrões*/
+SmartPhones Padrões
 
 @media only screen and (min-width: 360px){
 
-    /* Cabeçalho */
+     Cabeçalho 
 
     header{
         height: 70px;
@@ -272,7 +305,25 @@ footer span#lunicarFooter{
         padding: 1px;
         padding-top: 0.7em;
     }
+    
+    #menu #menuLista{
+        padding-left: 1.3em;
+    }
+
+    #menu #menuLista a div.menuItem{
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        width: 40%;
+        height: 9em;
+        font-size: large;
+    }
 
     content{
     }
+}
+
+ MONITORES PEQUENOS
+@media only screen and (min-width: 1080px){
+    
 }

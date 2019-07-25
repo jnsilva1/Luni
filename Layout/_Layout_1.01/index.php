@@ -44,13 +44,14 @@ if (!isset($_SESSION['idUser'])) {
         </header>
         <div name="menu" class="menu" id="menu" ><!-- DESENVOLVIMENTO DO MENU-->
             <div id="div-close">
-                <div name="btnClose" class="btnClose" id="btnClose"> <i class="far fa-times-circle fa-3x"></i></div>    
+                <div name="btnClose" class="btnClose" id="btnClose"> <i class="far fa-times-circle fa-3x pointer"></i></div>    
             </div>
-            <br>
-            <div name="menuLista" class="menuLista" id="menuLista" type="none">
 
+            <div name="menuLista" class="menuLista" id="menuLista" type="none">
+                
                 <a href="#"><div class="menuItem"><i class="fas fa-book fa-3x"></i><br>Catálogo</div></a>					
-                <a href="#"><div class="menuItem"><i class="fas fa-archive fa-3x"></i><br>Estoque</div></a>				
+                <a href="#"><div class="menuItem"><i class="fas fa-archive fa-3x"></i><br>Estoque</div></a>	
+                <a href="#"><div class="menuItem" id="btnclientes"><i class="fas fa-address-card fa-3x"></i><br>Clientes</div></a>
                 <a href="#"><div class="menuItem"><i class="fas fa-shopping-cart fa-3x"></i><br>Vendas</div></a>
                 <a href="#"><div class="menuItem"><i class="fas fa-sign-out-alt fa-3x"></i><br>Sair</div></a>
 
@@ -62,11 +63,11 @@ if (!isset($_SESSION['idUser'])) {
     </content>
     <footer> <!-- RODAPÉ DA PÁGINA -->
         <span id="lunicarFooter">	&copy Lunicar  
-<?php
-$data = date('Y');
+            <?php
+            $data = date('Y');
 
-echo $data;
-?></span>
+            echo $data;
+            ?></span>
         <br>
         <br>
         <span><a href="tel:+5511983076532"><i class="fab fa-whatsapp fa-2x"></i></a></span>
@@ -82,7 +83,7 @@ echo $data;
 <script type="text/javascript" src="<?php echo $fileRootDir; ?>/script/_Layout_1.01/index.js"></script>
 <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<!--<script type="text/javascript" src="<?php // echo $fileRootDir; ?>/script/noty/lib/noty.js"></script>-->
-<!--<link href="<?php //echo $fileRootDir; ?>/script/noty/lib/noty.css" rel="stylesheet">-->
+<!--<script type="text/javascript" src="<?php // echo $fileRootDir;  ?>/script/noty/lib/noty.js"></script>-->
+<!--<link href="<?php //echo $fileRootDir;  ?>/script/noty/lib/noty.css" rel="stylesheet">-->
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </html>
