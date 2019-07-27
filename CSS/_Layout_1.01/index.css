@@ -97,9 +97,10 @@ header div#btnMenu i{
     top: 0;
     position: fixed;
     z-index: 99999;
-    background-color:rgba(30,144,255,1);
+    background-color:rgba(0,0,0,1);
     color: white;
     overflow: auto;
+    left:-100%;
 }
 #menu #div-close{
     position: relative;
@@ -130,6 +131,7 @@ header div#btnMenu i{
     position: relative;
     text-align: center;
     float: left;
+    background-color: rgba(30,144,255,1);
     border: 1px solid wheat;
     border-radius: 10px;
     box-shadow: 5px 5px 10px white;
@@ -208,26 +210,7 @@ footer span#lunicarFooter{
     to {right:100%;}
 }
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
-
-/*-
-        PARA DESKTOP
--*/
-
-@media only screen and (min-width: 1280px){
-    /*Cabeçalho*/
-
-
-    /*Rodapé*/ 
-
-
-}
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
-
-
-
-/*PARA TABLETS*/
-
-
 
 
 
@@ -320,23 +303,58 @@ footer span#lunicarFooter{
     }
 }
 
+/*PARA TABLETS*/
+@media only screen and (min-width:760px){
+    #menu #menuLista a div.menuItem  {
+        width: 27%;
+        height: 9em;
+        font-size: large;
+    }
+}
+
+
 /*MONITORES PEQUENOS*/
 @media only screen and (min-width: 1080px){
 
     header{
         height: 80px;
     }
-    
+
+    header #logo{
+        width:15%;
+    }
+
     header #title{
         font-size:larger;
+        left:15%;
+        width:70%;
     }
-    
+
     header #btnMenu {
         font-size:larger;
+        padding-top: 0.5em;
+        width:15%;
     }
-    
 
-    #menu{
-
+    #menu #menuLista a div.menuItem  {
+        width:20%;
     }
+}
+
+
+/*-
+        PARA DESKTOP
+-*/
+
+@media only screen and (min-width: 1280px){
+    /*Cabeçalho*/
+
+
+    /*Rodapé*/ 
+
+    #menu #menuLista a div.menuItem  {
+        width:15%;
+        font-size:0.8em;
+    }
+
 }
