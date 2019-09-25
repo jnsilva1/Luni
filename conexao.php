@@ -47,7 +47,7 @@
 			
 			if(!isset(self::$instance)){
 				
-				self::$instance = new PDO("mysql:host=sql158.main-hosting.eu; dbname=u425114095_lsell", "u425114095_lunic", "lunicar@2019");
+				self::$instance = new PDO("");
 				self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 				self::$instance->setAttribute(PDO::ATTR_ORACLE_NULLS, PDO::NULL_EMPTY_STRING);
 
