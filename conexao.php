@@ -3,7 +3,7 @@
 		date_default_timezone_set('America/Sao_Paulo');
 
 		try{
-			$PDO = new PDO("mysql:host=sql158.main-hosting.eu; dbname=u425114095_lsell", "u425114095_lunic", "lunicar@2019"); //Objeto de Conexão
+			$PDO = new PDO(""); //Objeto de Conexão
 
 			//set the PDO error mode to exception
 			$PDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
